@@ -2,25 +2,28 @@ import React from "react"
 import {
     BrowserRouter,
     Switch,
-    Route,
-    Link,
-    useParams
+    Route
  } from 'react-router-dom'
 import SelectedDinosaur from "./components/SelectedDinoSaur"
 import GetRandomDinosaur from "./components/GetRandomDinoSaur"
-
+import Banner from './components/Banner'
+import './app.css'
 
 const App = () => {
     return (
         <BrowserRouter>
-            <Switch>
-                <Route path="/:dinoId">
-                    <SelectedDinosaur /> 
-                </Route>
-                <Route path="/"> 
-                    <GetRandomDinosaur />
-                </Route>
-            </Switch>
+            <div className="main">
+                <Banner />
+                <Switch>
+                    <Route path="/:dinoId">
+                        <SelectedDinosaur /> 
+                    </Route>
+                    <Route path="/"> 
+                        <GetRandomDinosaur />
+                    </Route>
+                </Switch>
+                <Banner />
+            </div>
         </BrowserRouter>
     )
 }
