@@ -8,12 +8,13 @@ import Location from './card/Location'
 
 const DinoCard = ({ dino }) => {
     document.title = `${document.title}: ${dino.name}`
+    const {name, diet, era, found, image, length, livedFrom, livedTo, meaning, pronunciation, type, weight} = dino
     return <div className="dinoCard">
             <div>
-                <h1><Title title={dino.name} /></h1>
-                <Length length={dino.length} />
-                <Lived from={dino.livedFrom} to={dino.livedTo} />
-                <Location found={dino.found} />
+                <Title name={name} pronunciation={pronunciation} meaning={meaning} />
+                <Length length={length} />
+                <Lived from={livedFrom} to={livedTo} />
+                <Location found={found} />
             </div> 
             <div className="imageContainer"><img className="image" src={dino.image} alt={dino.name} /></div>
             
