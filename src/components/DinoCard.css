@@ -18,3 +18,9 @@
 .image {
     max-width: 100%;
 }
+
+.line {
+    border: 1px ridge black;
+    width: 90%;
+    margin-bottom: 1.5em;
+}

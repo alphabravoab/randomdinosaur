@@ -1,0 +1,8 @@
+.head{
+    margin-bottom: 1.5em;
+    background-color: yellowgreen;
+}
+
+.name {
+    text-transform: capitalize;
+}
