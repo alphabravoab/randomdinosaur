@@ -1,8 +1,29 @@
 .head{
     margin-bottom: 1.5em;
-    background-color: yellowgreen;
 }
 
 .name {
     text-transform: capitalize;
+}
+
+.eras {
+    width: 80%;
+    height: 3em;
+    border: 3px inset;
+    display: flex;
+    padding: 2px;
+}
+
+.era {
+    border: 1px solid;
+    height: 100%;
+    width: 33%;
+    /* display: flex;  */
+}
+
+.eraDivider {
+    width:33%;
+    background-color: brown;
+    height: 100%;
+    margin: 1px;
 }
