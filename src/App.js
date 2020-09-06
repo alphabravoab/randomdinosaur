@@ -4,8 +4,8 @@ import {
     Switch,
     Route
  } from 'react-router-dom'
-import SelectedDinosaur from "./components/SelectedDinoSaur"
-import GetRandomDinosaur from "./components/GetRandomDinoSaur"
+import SelectedDinosaur from "./components/SelectedDinosaur"
+import GetRandomDinosaur from "./components/SelectedDinosaur"
 import Banner from './components/Banner'
 import './app.css'
 
