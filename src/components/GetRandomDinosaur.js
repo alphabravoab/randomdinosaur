@@ -4,7 +4,7 @@ import { http_get } from '../Service/HttpClient'
 
 const GetRandomDinosaur = () => {
     const [isLoaded, setIsLoaded] = useState(false);
-    const [dino, setDino] = useState(null) 
+    const [dino, setDino] = useState({}) 
     useEffect( () => { 
        async function getDino (){
         const dino = await http_get("random")

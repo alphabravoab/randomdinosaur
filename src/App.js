@@ -5,7 +5,7 @@ import {
     Route
  } from 'react-router-dom'
 import SelectedDinosaur from "./components/SelectedDinosaur"
-import GetRandomDinosaur from "./components/SelectedDinosaur"
+import GetRandomDinosaur from "./components/GetRandomDinosaur"
 import Banner from './components/Banner'
 import './app.css'
 
