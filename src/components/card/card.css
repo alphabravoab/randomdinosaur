@@ -8,16 +8,20 @@
 
 .eras {
     width: 80%;
-    height: 2.5em;
+    height: 5em;
     border: 3px inset;
     display: flex;
+    flex-wrap: wrap;
     padding: 2px;
+    align-content: space-between;
+    margin-bottom: 2em;
+    
 }
 
 .era {
     border: 1px solid;
     height: 2.5em;
-    width: 33%;
+    width: 32%;
 }
 
 .eraDivider {
