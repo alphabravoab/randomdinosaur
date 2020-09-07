@@ -1,5 +1,6 @@
 .dinoCard {
-    background-color: aqua;
+    background-color: #e6ffff;
+    color: #99928b;
     width: 80vw;
     border: 1px transparent grey;
     margin-top: 10px;
@@ -11,8 +12,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .imageContainer {
-    background-color: teal;
-    max-width: 50vw;
+    max-width: 40vw;
 }
 
 .image {
