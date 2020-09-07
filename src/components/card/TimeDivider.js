@@ -10,18 +10,16 @@ const TimeDivider =({era, lived}) => {
         setDinoPartEra(lived.split(' ')[0])
          const eraDino = lived.split(' ')[1]
          setDinoEra(era == eraDino)
-         console.log(eraDino, partEra, era)
-
     }},[lived])
-    console.log(partEra, eraDino)
+    console.log(partEra, lived)
     
     return(
         <div className="era">
             <div>{era}</div>
             <div className="earlyMidLate">
-                <div className="eraDivider">{partEra == "Early" && eraDino && "Early"}</div>
-                <div className="eraDivider">{partEra == "Mid" && eraDino && "Mid"}</div>
-                <div className="eraDivider">{partEra == "Late" && eraDino && "Late"}</div>
+                <div className="eraDivider"><div>Early{partEra == "Early" && eraDino && <div className="liveHere" />}</div></div>
+                <div className="eraDivider">Mid{partEra == "Mid" && eraDino && <div className="liveHere" />}</div>
+                <div className="eraDivider">Late{partEra == "Late" && eraDino && <div className="liveHere" />}</div>
             </div>
         </div>
     )
