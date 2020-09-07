@@ -6,17 +6,32 @@ import { http_get } from '../Service/HttpClient'
 const SelectedDinosaur = () => {
     const { dinoId } = useParams()
     const [isLoaded, setIsLoaded] = useState(false);
+    const [error, setError] = useState(false)
     const [dino, setDino] = useState(null) 
     useEffect( () => { 
        async function getDino (){
-        const dino = await http_get(dinoId)
-        console.log(dino.data)
-        setDino(dino.data)
-        setIsLoaded(true)
+        try{
+            const dino = await http_get(dinoId)
+            console.log(dino.data)
+            if(dino.data){
+                setDino(dino.data)
+                setIsLoaded(true)
+            }
+       } catch{
+           setError(true)
        }
-       getDino()     
+       
+    }
+    getDino()     
     },[])   
-    return isLoaded && <DinoCard dino={dino} />
+    return (
+    <> 
+    {isLoaded && <DinoCard dino={dino} />}
+    {!isLoaded && <DinoCard />}
+    {error && <div className="dinoCard"><h1>Error dinosaur not found</h1></div>}
+    </>
+    )
+    
 }
 
 export default SelectedDinosaur

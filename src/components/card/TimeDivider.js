@@ -11,7 +11,7 @@ const TimeDivider =({era, lived}) => {
          const eraDino = lived.split(' ')[1]
          setDinoEra(era == eraDino)
     }},[lived])
-    console.log(partEra, lived)
+
     
     return(
         <div className="era">

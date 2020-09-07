@@ -14,10 +14,10 @@ const GetRandomDinosaur = () => {
        }
        getDino()     
     },[])   
-    return <div>
+    return <>
         {isLoaded && <DinoCard dino={dino} />}
         {!isLoaded && <DinoCard />}
-    </div>
+    </>
 }
 
 export default GetRandomDinosaur
