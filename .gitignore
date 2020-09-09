@@ -11,3 +11,5 @@
 .DS_Store
 .cache
 npm-debug.log*
+
+.env
