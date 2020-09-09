@@ -1,16 +1,29 @@
 .dinoCard {
     background-color: #E1F4FD;
     color: #99928b;
-    width: 80vw;
+    width: 75vw;
     border: 1px transparent grey;
     margin-top: 10px;
-    /* height: 60vh; */
+    height: 90vh;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media (min-width: 1000px) {
+    .dinoCard {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .dinoCard {
+        width: 100vw;
+    }
+}
+
 .imageContainer {
     max-width: 40vw;
 }

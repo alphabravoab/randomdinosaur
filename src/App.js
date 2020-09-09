@@ -13,16 +13,18 @@ const App = () => {
     return (
         <BrowserRouter>
             <div className="main">
-                <Banner />
                 <Switch>
                     <Route path="/:dinoId">
-                        <SelectedDinosaur /> 
+                        <Banner />
+                            <SelectedDinosaur /> 
+                        <Banner />
                     </Route>
                     <Route path="/"> 
-                        <GetRandomDinosaur />
+                        <Banner />
+                            <GetRandomDinosaur />
+                        <Banner />
                     </Route>
                 </Switch>
-                <Banner />
             </div>
         </BrowserRouter>
     )
