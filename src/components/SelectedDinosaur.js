@@ -11,7 +11,7 @@ const SelectedDinosaur = () => {
     useEffect( () => { 
        async function getDino (){
         try{
-            const dino = await http_get(dinoId)
+            const dino = await http_get(dinoId.toLowerCase())
             console.log(dino.data)
             if(dino.data){
                 setDino(dino.data)
