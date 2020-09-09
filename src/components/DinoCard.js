@@ -1,14 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './DinoCard.css'
 import Title from './card/Title'
 import Stats from './card/Stats'
 import Lived from './card/Lived'
 import Location from './card/Location'
+import './DinoCard.css'
 
 const DinoCard = ({ dino }) => {
     document.title = `${document.title}: ${dino.name}`
     const {name, diet, era, found, image, length, livedFrom, livedTo, meaning, pronunciation, type, weight} = dino
+    const newDino= () => {
+        window.location.reload();
+    }
+    
     return (
         <div className="dinoCard">
             <div>
@@ -18,9 +22,10 @@ const DinoCard = ({ dino }) => {
                 <Stats length={length} weight={weight} diet={diet} type={type}/>
                 <Lived from={livedFrom} to={livedTo} era={era} />
                 <Location found={found} />
-                                
+                <button className="button" onClick={newDino}>Get new dinosaur</button>               
             </div> 
             <div className="imageContainer desktop"><img className="image" src={image} alt={dino.name} /></div>    
+            
         </div>
         )
 }
