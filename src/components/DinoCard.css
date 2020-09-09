@@ -16,17 +16,23 @@
     .dinoCard {
         width: 75vw;
     }
+    .phone {
+        display: none;
+        max-width: 40vw;
+    }
 }
 
 @media (max-width: 999px) {
     .dinoCard {
-        width: 100vw;
+        width: 99vw;
+    }
+
+    .desktop{
+        display: none;
     }
 }
 
-.imageContainer {
-    max-width: 40vw;
-}
+
 
 .image {
     max-width: 100%;

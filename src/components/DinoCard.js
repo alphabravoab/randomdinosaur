@@ -12,6 +12,7 @@ const DinoCard = ({ dino }) => {
     return (
         <div className="dinoCard">
             <div>
+            <div className="imageContainer phone"><img className="image" src={image} alt={dino.name} /></div>    
                 <Title name={name} pronunciation={pronunciation} meaning={meaning} />
                 <div className="line" />
                 <Stats length={length} weight={weight} diet={diet} type={type}/>
@@ -19,7 +20,7 @@ const DinoCard = ({ dino }) => {
                 <Location found={found} />
                                 
             </div> 
-            <div className="imageContainer"><img className="image" src={image} alt={dino.name} /></div>    
+            <div className="imageContainer desktop"><img className="image" src={image} alt={dino.name} /></div>    
         </div>
         )
 }
