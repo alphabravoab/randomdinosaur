@@ -1,5 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import TimeDivider from './TimeDivider'
+import AppContext from '../../Service/context'
 import triassic from '../../images/Triassic.jpg'
 import jurrasic from '../../images/Jurassic.jpg'
 import cretaceous from '../../images/Cretaceous.jpg'
@@ -7,7 +8,9 @@ import './card.css'
 
 
 
-const Lived = ({ from, to, era }) => {
+const Lived = () => {
+    const { dino } = useContext(AppContext)
+    const { from, to, era } = dino
     const [eraDino, setDinoEra] = useState("false")
     useEffect(()=>{
     if(era != "loading")

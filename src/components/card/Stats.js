@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import AppContext from '../../Service/context'
 
-const Length = ({ length, weight, diet, type }) => {
+const Stats = () => {
+    const { dino } = useContext(AppContext)
+    const { length, weight, diet, type } = dino
     return (
         <div> 
             {length != 0 && <div>Length: {length}</div> }
@@ -11,4 +14,4 @@ const Length = ({ length, weight, diet, type }) => {
         )
 }
 
-export default Length
+export default Stats
