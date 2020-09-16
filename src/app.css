@@ -1,6 +1,7 @@
 @media (min-width: 1000px) {
     .main{
         display: flex;
+        background-color: #ededed;
         justify-content: space-between;
     }
 }
@@ -8,6 +9,7 @@
 @media (max-width: 999px) {
     .main{
         display: flex;
+        background-color: #ededed;
         flex-direction: column;
     }
 }

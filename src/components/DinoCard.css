@@ -1,5 +1,6 @@
 .dinoCard {
-    background-color: #E1F4FD;
+    background: rgb(232,232,232);
+    background: linear-gradient(133deg, rgba(232,232,232,1) 0%, rgba(218,218,218,1) 100%);
     color: #99928b;
     width: 75vw;
     margin-top: 10px;
@@ -8,7 +9,10 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 
+        3px 3px 5px  #adadad, 
+        -3px -3px 5px #f7f7f7;
+    
 }
 
 @media (min-width: 1000px) {
@@ -30,12 +34,21 @@
     .desktop{
         display: none;
     }
+    .button {
+        font-size: larger;
+        color: #99928b;
+        margin-left: 25%;
+    }
 }
 
 
 
 .image {
     max-width: 100%;
+    height: auto;
+    box-shadow: 
+    -3px -3px 5px  #adadad, 
+    3px 3px 5px #f7f7f7;
 }
 
 .line {
@@ -44,11 +57,21 @@
     margin-bottom: 1.5em;
 }
 
+
 .button {
     margin-top: 1.5em;
     border: none;
-    background-color: #fdfde1;
+    background: rgb(232,232,232);
+    background: linear-gradient(133deg, rgba(232,232,232,1) 0%, rgba(218,218,218,1) 100%);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 
+        3px 3px 5px  #adadad, 
+        -3px -3px 5px #f7f7f7;
+}
+
+.button:active {
+    box-shadow: 
+        -3px -3px 5px  #adadad, 
+        3px 3px 5px #f7f7f7;
 }
