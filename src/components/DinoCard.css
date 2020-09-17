@@ -27,7 +27,11 @@
 
 @media (max-width: 999px) {
     .dinoCard {
-        width: 99vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90vw;
         font-size: 2em;
     }
 
