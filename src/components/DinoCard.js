@@ -6,6 +6,7 @@ import Lived from './card/Lived'
 import Location from './card/Location'
 import AppContext from '../Service/context'
 import './DinoCard.css'
+import Tile from './neuMorph/Tile'
 
 const DinoCard = () => {
     const { dino } = useContext(AppContext)
@@ -19,7 +20,7 @@ const DinoCard = () => {
     }
     
     return (
-        <div className="dinoCard">
+        <Tile inlay={false}>
             {!dino.loading &&
             <div>
             <div className="imageContainer phone"><img className="image" src={image} alt={name} /></div>    
@@ -31,8 +32,7 @@ const DinoCard = () => {
                 <button className="button" onClick={newDino}>Get new dinosaur</button>               
             </div> }
             {!dino.loading &&<div className="imageContainer desktop"><img className="image" src={image} alt={dino.name} /></div>   }
-            
-        </div>
+        </Tile>
         )
 }
 
