@@ -1,5 +1,6 @@
 import React from 'react'
 import './WhenDinosaursLived.css'
+import {eras} from '../../constants'
 
 const WhenDinosaursLived = () => {
     return (
@@ -11,6 +12,12 @@ const WhenDinosaursLived = () => {
                 developed a time scale that can show when different spieces of plants and animals first appeared and went
                 exctinct with reasonable accuracy. Geologists ea recognize 22 geological time periods and 14 Era's that
                 played a vital part in the evolution of life on earth. These time periods are:
+            </div>
+            <div className="text">
+            <table>
+                {eras.map(era => <tr><td>{era.name}</td><td>{era.period}</td></tr>)}
+                
+            </table>
             </div>
             <div className="text">
                 According to this time scale the earth is 4.6 billion years old. It took 2,6 billion years before complex life
