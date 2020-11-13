@@ -6,6 +6,7 @@ import Lived from './card/Lived'
 import Location from './card/Location'
 import AppContext from '../Service/context'
 import './DinoCard.css'
+import WhenDinosaursLived from './card/WhenDinosaursLived'
 
 const DinoCard = () => {
     const { dino } = useContext(AppContext)
@@ -28,7 +29,8 @@ const DinoCard = () => {
                 <Stats />
                 <Lived />
                 <Location />
-                <button className="button" onClick={newDino}>Get new dinosaur</button>               
+                <button className="button" onClick={newDino}>Get new dinosaur</button>   
+                <div className="geoText"><WhenDinosaursLived /></div>           
             </div> }
             {!dino.loading &&<div className="imageContainer desktop"><img className="image" src={image} alt={dino.name} /></div>   }
             

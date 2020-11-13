@@ -45,7 +45,9 @@
     }
 }
 
-
+.geoText {
+    width: 50vw;
+}
 
 .image {
     max-width: 100%;

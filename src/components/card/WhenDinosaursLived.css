@@ -1,0 +1,13 @@
+.text {
+    margin-bottom: 1em;
+}
+
+.title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.references {
+    font-size: small;
+    font-style: italic;
+}
