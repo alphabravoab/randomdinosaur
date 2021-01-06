@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "app.css": "^0.1.2",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "react-hook-form": "^6.5.3",
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.2.1",
