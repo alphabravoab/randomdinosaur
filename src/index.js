@@ -1,16 +1,21 @@
 import React from 'react';
-import ReactDOM from "react-dom"
 import App from './App'
-
+import { hydrate, render } from "react-dom";
 import dotenv from "dotenv"
 import ContextProvider from './Service/context/ContextProvider';
 
 dotenv.config();
 
-let root = document.getElementById("root")
 
-ReactDOM.render(
+const reactApp = (
     <ContextProvider>
         <App />
     </ContextProvider>
-    , root);
+)
+
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(reactApp, rootElement);
+} else {
+  render(reactApp, rootElement);
+}
