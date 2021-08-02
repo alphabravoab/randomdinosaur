@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import DinoCard from './DinoCard'
 import { useParams } from 'react-router-dom'
 import { http_get } from '../Service/HttpClient'
@@ -31,7 +31,6 @@ const SelectedDinosaur = () => {
     {error && <div className="dinoCard"><h1>Error dinosaur not found</h1></div>}
     </>
     )
-    
 }
 
-export default SelectedDinosaur
+export default SelectedDinosaur;

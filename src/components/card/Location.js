@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import AppContext from '../../Service/context'
+import React, { useContext } from 'react';
+import AppContext from '../../Service/context';
 
 const Location = () => {
-    const { dino } = useContext(AppContext)
-    const { found } = dino
-    return <div> Found in: {found} </div>
-}
+    const { dino } = useContext(AppContext);
+    const { found } = dino;
+    return <div> Found in: {found} </div>;
+};
 
-export default Location
+export default Location;

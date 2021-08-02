@@ -1,6 +1,6 @@
-import React from 'react'
-import './WhenDinosaursLived.css'
-import {eras} from '../../constants'
+import React from 'react';
+import './WhenDinosaursLived.css';
+import {eras} from '../../constants';
 
 const WhenDinosaursLived = () => {
     return (
@@ -148,7 +148,7 @@ const WhenDinosaursLived = () => {
         </div>
 
 
-    )
-}
+    );
+};
 
-export default WhenDinosaursLived
+export default WhenDinosaursLived;

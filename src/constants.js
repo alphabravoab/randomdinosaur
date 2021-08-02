@@ -21,7 +21,7 @@ const eras = [
     {name: 'Paleogene', period: '56 milion years ago' }, 
     {name: 'Neogene ', period: '23.03 milion years ago' }, 
     {name: 'Quaternary ', period: '2.58 milion years ago' },
-]
+];
 
 
-export {eras}
+export {eras};

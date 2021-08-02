@@ -1,5 +1,5 @@
-import React from 'react'
-import './banner.css'
+import React from 'react';
+import './banner.css';
 
 const Banner = () => {
     const addBanner = () => {
@@ -9,10 +9,10 @@ const Banner = () => {
             });
         }
         catch (error) {}
-    }
-    addBanner()
+    };
+    addBanner();
     return <div className="banner"> <div id="844619673">
-</div></div>
-}
+</div></div>;
+};
 
-export default Banner
+export default Banner;

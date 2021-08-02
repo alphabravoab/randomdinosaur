@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import AppContext from '../../Service/context'
-import "./card.css"
+import React, { useContext } from 'react';
+import AppContext from '../../Service/context';
+import "./card.css";
 
 const Title = () => {
-    const { dino } = useContext(AppContext)
-    const { name, pronunciation, meaning} = dino
+    const { dino } = useContext(AppContext);
+    const { name, pronunciation, meaning} = dino;
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
       }
@@ -14,7 +14,7 @@ const Title = () => {
             <div>pronunciation: {pronunciation}</div>
             <div>Meaning: {meaning}</div>
         </div>
-    )
-}
+    );
+};
 
-export default Title
+export default Title;

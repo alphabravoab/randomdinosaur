@@ -1,23 +1,23 @@
-import React, {useContext} from 'react'
-import PropTypes from 'prop-types'
-import Title from './card/Title'
-import Stats from './card/Stats'
-import Lived from './card/Lived'
-import Location from './card/Location'
-import AppContext from '../Service/context'
-import './DinoCard.css'
-import WhenDinosaursLived from './card/WhenDinosaursLived'
+import React, {useContext} from 'react';
+import PropTypes from 'prop-types';
+import Title from './card/Title';
+import Stats from './card/Stats';
+import Lived from './card/Lived';
+import Location from './card/Location';
+import AppContext from '../Service/context';
+import './DinoCard.css';
+import WhenDinosaursLived from './card/WhenDinosaursLived';
 
 const DinoCard = () => {
-    const { dino } = useContext(AppContext)
+    const { dino } = useContext(AppContext);
     if(!dino.loading) {
-        document.title = `${document.title}: ${dino.name}`
+        document.title = `${document.title}: ${dino.name}`;
         
     }
-    const { name, image } = dino
+    const { name, image } = dino;
     const newDino= () => {
         window.location.reload();
-    }
+    };
     
     return (
         <div className="dinoCard">
@@ -35,8 +35,8 @@ const DinoCard = () => {
             {!dino.loading &&<div className="imageContainer desktop"><img className="image" src={image} alt={dino.name} /></div>   }
             
         </div>
-        )
-}
+        );
+};
 
 DinoCard.propTypes  = {
     dino: PropTypes.shape({
@@ -60,9 +60,9 @@ DinoCard.propTypes  = {
             PropTypes.number
           ]),
     })
-}
+};
 
-DinoCard.defaultProps ={
+DinoCard.defaultProps = {
     dino: {
         name: "loading",
         diet: "loading",
@@ -78,6 +78,6 @@ DinoCard.defaultProps ={
         type: "loading",
         weight: "loading"
     }
-}
+};
 
-export default DinoCard
+export default DinoCard;
