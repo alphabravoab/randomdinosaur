@@ -4,6 +4,7 @@ import AppContext from '.';
 const initialState = {
     loading: true
 };
+
 const ContextProvider = ({ children }) => {
   const [dino, setDino] = useState(initialState);
   const context = {
